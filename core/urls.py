@@ -23,6 +23,9 @@ urlpatterns = i18n_patterns(
     # URL Apps
     path('', include(urlpatterns_app)),
 
+    # URL CkEditor
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+
     # URL Swagger
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),

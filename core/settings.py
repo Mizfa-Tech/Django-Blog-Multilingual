@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_spectacular',
     'drf_spectacular_sidecar',
+    'ckeditor',
+    'ckeditor_uploader',
 
     # my app
     'account.apps.AccountConfig',
@@ -149,3 +151,11 @@ SPECTACULAR_SETTINGS = {
 
 # Config User
 AUTH_USER_MODEL = 'account.CustomUser'
+
+# Ckeditor Config
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+    }
+}
