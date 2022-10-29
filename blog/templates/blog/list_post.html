@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block main %}
+    {% for post in posts %}
+        <div class="card p-4">
+            <h3>
+                {{ post.title }}
+                <em style="font-size: small">{{ post.created_at }}</em>
+            </h3>
+            <p>{{ post.author }}</p>
+            <strong>Price: {{ post.category.title }}</strong>
+        </div>
+        <hr/>
+    {% empty %}
+        <p>Database is empty</p>
+    {% endfor %}
+
+{% endblock %}

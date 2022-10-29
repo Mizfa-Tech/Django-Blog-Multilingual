@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="card p-4">
+        <h3>
+            {{ post.title }}
+            <em style="font-size: small">{{ post.created_at }}</em>
+        </h3>
+        <p>{{ post.content }}</p>
+        <strong>Price: {{ post.category.title }}</strong>
+    </div>
+    <hr/>
+{% endblock %}
