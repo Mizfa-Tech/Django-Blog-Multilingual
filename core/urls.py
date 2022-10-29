@@ -6,11 +6,11 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 
 # ----------------------------------------------------------------------------------------------------------------------
 urlpatterns_api_v1 = [
-
+    path('', include('blog.urls_api')),
 ]
 
 urlpatterns_app = [
-
+    path('blog/', include('blog.urls')),
 ]
 # ----------------------------------------------------------------------------------------------------------------------
 urlpatterns = i18n_patterns(
