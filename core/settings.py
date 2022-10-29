@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     # my app
     'account.apps.AccountConfig',
     'blog.apps.BlogConfig',
+    'utils.apps.UtilsConfig',
 
 ]
 
