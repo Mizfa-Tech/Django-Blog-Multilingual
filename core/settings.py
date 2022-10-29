@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'drf_spectacular_sidecar',
     'ckeditor',
     'ckeditor_uploader',
+    'rosetta',
 
     # my app
     'account.apps.AccountConfig',
@@ -159,3 +160,6 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'Custom',
     }
 }
+
+# Config Rosetta
+ROSETTA_MESSAGES_PER_PAGE = 100

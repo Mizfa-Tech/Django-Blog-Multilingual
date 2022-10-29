@@ -14,6 +14,9 @@ urlpatterns_app = [
 ]
 # ----------------------------------------------------------------------------------------------------------------------
 urlpatterns = i18n_patterns(
+    # URL Rosetta
+    path('admin/rosetta/', include('rosetta.urls')),
+
     # URL Admin App
     path('admin/', admin.site.urls),
 
