@@ -15,7 +15,7 @@ urlpatterns_app = [
 # ----------------------------------------------------------------------------------------------------------------------
 urlpatterns = i18n_patterns(
     # URL Admin App
-    path(_('admin/'), admin.site.urls),
+    path('admin/', admin.site.urls),
 
     # URL Api Apps
     path('api/v1/', include(urlpatterns_api_v1)),

@@ -1,5 +1,6 @@
 from django.contrib import admin
 from blog.models import Category
+from django.utils.translation import gettext_lazy as _
 
 
 @admin.register(Category)
@@ -9,16 +10,16 @@ class CategoryAdmin(admin.ModelAdmin):
     readonly_fields = ('created_at', 'updated_at')
 
     fieldsets = (
-        ("Main", {'fields': ('title', 'slug', 'thumbnail', 'thumbnail_alt', 'description')}),
-        ('Sub Category', {'fields': ('parent_category',)}),
-        ("Date", {'fields': ('created_at', "updated_at")}),
-        ("SEO Information", {'fields': ("meta_title", "meta_description")}),
-        ('Settings', {'fields': ('status',)}),
+        (_("Main"), {'fields': ('title', 'slug', 'thumbnail', 'thumbnail_alt', 'description')}),
+        (_('Sub Category'), {'fields': ('parent_category',)}),
+        (_('Date'), {'fields': ('created_at', "updated_at")}),
+        (_("SEO Information"), {'fields': ("meta_title", "meta_description")}),
+        (_('Settings'), {'fields': ('status',)}),
     )
 
     add_fieldsets = (
-        ("Main", {'fields': ('title', 'slug', 'thumbnail', 'thumbnail_alt', 'description')}),
-        ('Sub Category', {'fields': ('parent_category',)}),
-        ("SEO Information", {'fields': ("meta_title", "meta_description")}),
-        ('Settings', {'fields': ('status',)}),
+        (_("Main"), {'fields': ('title', 'slug', 'thumbnail', 'thumbnail_alt', 'description')}),
+        (_('Sub Category'), {'fields': ('parent_category',)}),
+        (_("SEO Information"), {'fields': ("meta_title", "meta_description")}),
+        (_('Settings'), {'fields': ('status',)}),
     )

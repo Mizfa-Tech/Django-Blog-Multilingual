@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-29 13:38+0000\n"
+"POT-Creation-Date: 2022-10-29 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,191 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: core/settings.py:108
+#: blog/admin/admin_category.py:13 blog/admin/admin_category.py:21
+#: blog/admin/admin_post.py:13 blog/admin/admin_post.py:20
+msgid "Main"
+msgstr "Main"
+
+#: blog/admin/admin_category.py:14 blog/admin/admin_category.py:22
+#, fuzzy
+#| msgid "Category"
+msgid "Sub Category"
+msgstr "Category"
+
+#: blog/admin/admin_category.py:15 blog/admin/admin_post.py:14
+msgid "Date"
+msgstr "Date"
+
+#: blog/admin/admin_category.py:16 blog/admin/admin_category.py:23
+msgid "SEO Information"
+msgstr "SEO Information"
+
+#: blog/admin/admin_category.py:17 blog/admin/admin_category.py:24
+#: blog/admin/admin_post.py:16 blog/admin/admin_post.py:22
+msgid "Settings"
+msgstr "Settings"
+
+#: blog/admin/admin_post.py:15 blog/admin/admin_post.py:21
+msgid "SEO information"
+msgstr "SEO information"
+
+#: blog/models/model_category.py:12
+msgid "Category"
+msgstr "Category"
+
+#: blog/models/model_category.py:13
+msgid "Categories"
+msgstr "Categories"
+
+#: blog/models/model_category.py:16
+msgid "parent category"
+msgstr "parent category"
+
+#: blog/models/model_post.py:10
+msgid "Post"
+msgstr "Post"
+
+#: blog/models/model_post.py:11
+msgid "Posts"
+msgstr "Posts"
+
+#: blog/models/model_post.py:13
+msgid "category"
+msgstr "category"
+
+#: core/settings.py:112
 msgid "English"
+msgstr "English"
+
+#: core/settings.py:113
+msgid "Persian"
+msgstr "Persian"
+
+#: core/urls.py:18
+msgid "admin/"
+msgstr "admin/"
+
+#: utils/general/models/model_basic_post_abstract.py:27
+#: utils/general/models/model_taxonomy_abstraction.py:15
+msgid "title"
+msgstr "title"
+
+#: utils/general/models/model_basic_post_abstract.py:28
+msgid "content"
+msgstr "content"
+
+#: utils/general/models/model_basic_post_abstract.py:29
+#: utils/general/models/model_taxonomy_abstraction.py:17
+msgid "slug"
+msgstr "slug"
+
+#: utils/general/models/model_basic_post_abstract.py:31
+msgid "author"
+msgstr "author"
+
+#: utils/general/models/model_basic_post_abstract.py:32
+#: utils/general/models/model_taxonomy_abstraction.py:18
+msgid "thumbnail"
+msgstr "thumbnail"
+
+#: utils/general/models/model_basic_post_abstract.py:35
+#: utils/general/models/model_taxonomy_abstraction.py:19
+msgid "thumbnail alt"
+msgstr "thumbnail alt"
+
+#: utils/general/models/model_date_abstract.py:10
+msgid "created at"
+msgstr "created at"
+
+#: utils/general/models/model_date_abstract.py:11
+msgid "updated at"
+msgstr "updated at"
+
+#: utils/general/models/model_date_abstract.py:13
+msgid "created at jalali"
+msgstr "created at jalali"
+
+#: utils/general/models/model_date_abstract.py:14
+msgid "updated at jalali"
+msgstr "updated at jalali"
+
+#: utils/general/models/model_seo_abstract.py:10
+msgid "meta title"
+msgstr "meta title"
+
+#: utils/general/models/model_seo_abstract.py:11
+msgid "meta description"
+msgstr "meta description"
+
+#: utils/general/models/model_status_abstract.py:10
+msgid "Publish"
+msgstr "Publish"
+
+#: utils/general/models/model_status_abstract.py:11
+msgid "Inriview"
+msgstr "Inriview"
+
+#: utils/general/models/model_status_abstract.py:12
+msgid "Pending"
+msgstr "Pending"
+
+#: utils/general/models/model_status_abstract.py:14
+msgid "status"
+msgstr "status"
+
+#: utils/general/models/model_taxonomy_abstraction.py:16
+msgid "description"
+msgstr "description"
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/forms.py:6
+msgid "Search files"
+msgstr "Search files"
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
+msgid "Select an image to embed"
 msgstr ""
 
-#: core/settings.py:109
-msgid "Persian"
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
+msgid "&lsaquo; Prev"
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:15
@@ -276,6 +455,7 @@ msgid ""
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1331
+#: venv/lib/python3.10/site-packages/django_jalali/db/models.py:61
 msgid "Date (without time)"
 msgstr ""
 
@@ -294,6 +474,7 @@ msgid ""
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1471
+#: venv/lib/python3.10/site-packages/django_jalali/db/models.py:223
 msgid "Date (with time)"
 msgstr ""
 
@@ -484,6 +665,7 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:467
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:1240
+#: venv/lib/python3.10/site-packages/django_jalali/forms/__init__.py:15
 msgid "Enter a valid date."
 msgstr ""
 
@@ -493,6 +675,7 @@ msgid "Enter a valid time."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:517
+#: venv/lib/python3.10/site-packages/django_jalali/forms/__init__.py:54
 msgid "Enter a valid date/time."
 msgstr ""
 
@@ -1227,6 +1410,52 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:249
 msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filters.py:38
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filterspecs.py:38
+msgid "Any date"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filters.py:39
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filterspecs.py:39
+msgid "Today"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filters.py:43
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filterspecs.py:40
+msgid "Past 7 days"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filters.py:47
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filterspecs.py:44
+msgid "This month"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filters.py:51
+#: venv/lib/python3.10/site-packages/django_jalali/admin/filterspecs.py:48
+msgid "This year"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/widgets.py:51
+msgid "Date:"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/admin/widgets.py:51
+msgid "Time:"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/db/models.py:64
+msgid "Enter a valid date in YYYY-MM-DD format."
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/db/models.py:65
+#, python-format
+msgid "Invalid date: %s"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/django_jalali/db/models.py:220
+msgid "Enter a valid date/time in YYYY-MM-DD HH:MM[:ss[.uuuuuu]] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/drf_spectacular/openapi.py:1272
