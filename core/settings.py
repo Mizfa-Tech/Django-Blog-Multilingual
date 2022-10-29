@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'drf_spectacular_sidecar',
 
     # my app
+    'account.apps.AccountConfig',
 
 ]
 
@@ -132,3 +133,6 @@ SPECTACULAR_SETTINGS = {
     'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
     'REDOC_DIST': 'SIDECAR',
 }
+
+# Config User
+AUTH_USER_MODEL = 'account.CustomUser'
