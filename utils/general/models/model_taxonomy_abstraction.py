@@ -4,7 +4,7 @@ from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
 from ckeditor_uploader.fields import RichTextUploadingField
 
-from utils.unique_slug_generator import unique_slug_generator
+from utils.utile.unique_slug_generator import unique_slug_generator
 
 from datetime import datetime
 

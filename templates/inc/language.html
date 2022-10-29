@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load change_language_tag %}
 
 
 {% get_current_language as CURRENT_LANGUAGE %}
@@ -9,7 +10,7 @@
     <ul class="languages">
         {% for language in languages %}
             <li>
-                <a href="/{{ language.code }}/"
+                <a href="{% change_lang language.code %}"
                         {% if language.code == CURRENT_LANGUAGE %} class="active"{% endif %}>
                     {{ language.name_local }}
                 </a>
@@ -17,3 +18,6 @@
         {% endfor %}
     </ul>
 </div>
+
+
+
