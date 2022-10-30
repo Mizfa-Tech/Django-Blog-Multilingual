@@ -4,17 +4,17 @@
 
 {% block main %}
     {% for post in posts %}
-        <div class="card p-4">
-            <h3>
-                {{ post.title }}
-                <em style="font-size: small">{{ post.created_at }}</em>
+        <div class="card p-4" style="margin-top: 50px">
+            <h3 style="font-size: 5vh"><a  href="{{ post.get_absolute_url }}">{{ post.title }}</a><br>
+                <em style="font-size: medium">{% trans 'Date' %} : {{ post.created_at }}</em>
             </h3>
-            <p>{{ post.author }}</p>
-            <strong>Price: {{ post.category.title }}</strong>
+            <p>{{ post.content|safe|truncatewords:80 }}</p>
+            <strong style="font-size: medium;color: darkgreen">{% trans 'Category' %}
+                : {{ post.category.title }}</strong>
         </div>
-        <hr/>
+
     {% empty %}
-        <p>Database is empty</p>
+        <p>{% trans 'Database is empty' %}</p>
     {% endfor %}
 
 {% endblock %}

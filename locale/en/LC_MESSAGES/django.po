@@ -8,104 +8,123 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-29 14:40+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2022-10-30 12:31+0000\n"
+"PO-Revision-Date: 2022-10-30 12:34+0000\n"
+"Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
 
-#: blog/admin/admin_category.py:13 blog/admin/admin_category.py:21
-#: blog/admin/admin_post.py:13 blog/admin/admin_post.py:20
+#: blog/admin/admin_category.py:14 blog/admin/admin_category.py:23
+#: blog/admin/admin_post.py:14 blog/admin/admin_post.py:23
+msgid "Fa"
+msgstr ""
+
+#: blog/admin/admin_category.py:15 blog/admin/admin_category.py:24
+#: blog/admin/admin_post.py:15 blog/admin/admin_post.py:24
+msgid "En"
+msgstr ""
+
+#: blog/admin/admin_category.py:16 blog/admin/admin_category.py:25
+#: blog/admin/admin_post.py:16 blog/admin/admin_post.py:25
 msgid "Main"
 msgstr "Main"
 
-#: blog/admin/admin_category.py:14 blog/admin/admin_category.py:22
-#, fuzzy
-#| msgid "Category"
-msgid "Sub Category"
-msgstr "Category"
-
-#: blog/admin/admin_category.py:15 blog/admin/admin_post.py:14
+#: blog/admin/admin_category.py:17 blog/admin/admin_post.py:17
+#: blog/templates/blog/detail_post.html:7
 msgid "Date"
 msgstr "Date"
 
-#: blog/admin/admin_category.py:16 blog/admin/admin_category.py:23
+#: blog/admin/admin_category.py:18 blog/admin/admin_category.py:26
 msgid "SEO Information"
 msgstr "SEO Information"
 
-#: blog/admin/admin_category.py:17 blog/admin/admin_category.py:24
-#: blog/admin/admin_post.py:16 blog/admin/admin_post.py:22
+#: blog/admin/admin_category.py:19 blog/admin/admin_category.py:27
+#: blog/admin/admin_post.py:19 blog/admin/admin_post.py:27
 msgid "Settings"
 msgstr "Settings"
 
-#: blog/admin/admin_post.py:15 blog/admin/admin_post.py:21
+#: blog/admin/admin_post.py:18 blog/admin/admin_post.py:26
 msgid "SEO information"
 msgstr "SEO information"
 
-#: blog/models/model_category.py:12
+#: blog/models/model_category.py:15 blog/templates/blog/detail_post.html:10
 msgid "Category"
 msgstr "Category"
 
-#: blog/models/model_category.py:13
+#: blog/models/model_category.py:16
 msgid "Categories"
 msgstr "Categories"
 
-#: blog/models/model_category.py:16
+#: blog/models/model_category.py:19
 msgid "parent category"
 msgstr "parent category"
 
-#: blog/models/model_post.py:10
+#: blog/models/model_post.py:13
 msgid "Post"
 msgstr "Post"
 
-#: blog/models/model_post.py:11
+#: blog/models/model_post.py:14
 msgid "Posts"
 msgstr "Posts"
 
-#: blog/models/model_post.py:13
+#: blog/models/model_post.py:16
 msgid "category"
 msgstr "category"
 
-#: core/settings.py:112
+#: blog/templates/blog/detail_post.html:6
+#| msgid "author"
+msgid "Author"
+msgstr "author"
+
+#: core/settings.py:119
 msgid "English"
 msgstr "English"
 
-#: core/settings.py:113
+#: core/settings.py:120
 msgid "Persian"
 msgstr "Persian"
 
-#: core/urls.py:18
-msgid "admin/"
-msgstr "admin/"
+#: templates/base.html:18
+msgid "This is the title"
+msgstr ""
 
-#: utils/general/models/model_basic_post_abstract.py:27
+#: templates/base.html:55
+msgid "TestDriven.io Courses"
+msgstr ""
+
+#: templates/inc/language.html:9
+msgid "Language"
+msgstr ""
+
+#: utils/general/models/model_basic_post_abstract.py:26
 #: utils/general/models/model_taxonomy_abstraction.py:15
 msgid "title"
 msgstr "title"
 
-#: utils/general/models/model_basic_post_abstract.py:28
+#: utils/general/models/model_basic_post_abstract.py:27
 msgid "content"
 msgstr "content"
 
-#: utils/general/models/model_basic_post_abstract.py:29
+#: utils/general/models/model_basic_post_abstract.py:28
 #: utils/general/models/model_taxonomy_abstraction.py:17
 msgid "slug"
 msgstr "slug"
 
-#: utils/general/models/model_basic_post_abstract.py:31
+#: utils/general/models/model_basic_post_abstract.py:30
 msgid "author"
 msgstr "author"
 
-#: utils/general/models/model_basic_post_abstract.py:32
+#: utils/general/models/model_basic_post_abstract.py:31
 #: utils/general/models/model_taxonomy_abstraction.py:18
 msgid "thumbnail"
 msgstr "thumbnail"
 
-#: utils/general/models/model_basic_post_abstract.py:35
+#: utils/general/models/model_basic_post_abstract.py:34
 #: utils/general/models/model_taxonomy_abstraction.py:19
 msgid "thumbnail alt"
 msgstr "thumbnail alt"
@@ -264,8 +283,8 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:264
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
-"hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/core/validators.py:276
@@ -462,15 +481,15 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1458
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
-"uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1466
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
-"[TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1471
@@ -490,8 +509,8 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1754
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
-"uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1758
@@ -650,7 +669,8 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the label
+#. characters will prevent the default label_suffix to be appended to the
+#. label
 #: venv/lib/python3.10/site-packages/django/forms/boundfield.py:176
 msgid ":?.!"
 msgstr ""
@@ -702,7 +722,8 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/fields.py:622
 #, python-format
-msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -810,7 +831,8 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/models.py:1435
-msgid "Select a valid choice. That choice is not one of the available choices."
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/forms/models.py:1574
@@ -1270,10 +1292,10 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/csrf.py:127
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
-"including the “Referrer-Policy: no-referrer” header, please remove them. The "
-"CSRF protection requires the “Referer” header to do strict referer checking. "
-"If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1325,8 +1347,8 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because %(class_name)s."
-"allow_future is False."
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/generic/dates.py:692
@@ -1382,10 +1404,10 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:222
 #, python-format
 msgid ""
-"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
-"%(version)s/ref/settings/#debug\" target=\"_blank\" "
-"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
-"configured any URLs."
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
 msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:230
@@ -1478,10 +1500,28 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/drf_spectacular/views.py:43
 msgid ""
 "\n"
-"    OpenApi3 schema for this API. Format can be selected via content "
-"negotiation.\n"
+"    OpenApi3 schema for this API. Format can be selected via content negotiation.\n"
 "\n"
 "    - YAML: application/vnd.oai.openapi\n"
 "    - JSON: application/vnd.oai.openapi+json\n"
 "    "
 msgstr ""
+
+#: venv/lib/python3.10/site-packages/modeltranslation/widgets.py:26
+msgid "None"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/parler_rest/fields.py:21
+msgid "Input is not a valid dict"
+msgstr ""
+
+#: venv/lib/python3.10/site-packages/parler_rest/fields.py:22
+msgid "This field may not be empty."
+msgstr ""
+
+#, fuzzy
+#~ msgid "Sub Category"
+#~ msgstr "Category"
+
+#~ msgid "admin/"
+#~ msgstr "admin/"
