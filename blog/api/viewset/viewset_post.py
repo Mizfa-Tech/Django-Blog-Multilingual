@@ -13,7 +13,7 @@ class PostViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ['title_en', 'title_fa', 'title', ]
+    filterset_fields = ['title', 'category__title', 'author__username', 'author__email', 'slug', 'category__slug']
     search_fields = ['title', 'category__title', 'author__username', 'author__email', 'slug', 'category__slug']
 
     def get_queryset(self):
