@@ -1,8 +1,11 @@
 from rest_framework import serializers
 from blog.models import Post
+from account.api.serializer import BaseUserSerializer
 
 
 class ListPostSerializer(serializers.ModelSerializer):
+    author = BaseUserSerializer(read_only=True)
+
     class Meta:
         model = Post
         fields = (
