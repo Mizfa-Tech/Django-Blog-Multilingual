@@ -1,10 +1,13 @@
 from rest_framework import serializers
+
+from blog.api.serializer.serializer_base_category import BaseCategorySerializer
 from blog.models import Post
 from account.api.serializer import BaseUserSerializer
 
 
 class DetailPostSerializer(serializers.ModelSerializer):
     author = BaseUserSerializer(read_only=True)
+    category = BaseCategorySerializer(read_only=True)
 
     class Meta:
         model = Post
