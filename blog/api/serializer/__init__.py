@@ -1,0 +1,1 @@
+from .serializer_list_post import ListPostSerializer
