@@ -1,6 +1,5 @@
 from django.db import models
-from django.db.models.signals import pre_save
-from django.dispatch import receiver
+
 from django.utils.translation import gettext_lazy as _
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.auth import get_user_model
@@ -34,8 +33,3 @@ class BasicPost(models.Model):
                                   blank=True, null=True)
     thumbnail_alt = models.CharField(_('thumbnail alt'), max_length=350, blank=True)
 
-
-@receiver(pre_save, sender=BasicPost)
-def base_post_pre_save_receiver(sender, instance, *args, **kwargs):
-    if not instance.slug:
-        instance.slug = unique_slug_generator(instance)

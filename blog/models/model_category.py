@@ -1,10 +1,13 @@
 from django.db import models
+from django.db.models.signals import pre_save
+from django.dispatch import receiver
 from django.utils.translation import gettext_lazy as _
 
 from utils.general.models import DateBasic
 from utils.general.models import Seo
 from utils.general.models import Taxonomy
 from utils.general.models import Status
+from utils.utile.unique_slug_generator import unique_slug_generator
 
 
 class Category(Seo, Taxonomy, DateBasic, Status):
@@ -17,3 +20,9 @@ class Category(Seo, Taxonomy, DateBasic, Status):
 
     def __str__(self):
         return self.title
+
+
+@receiver(pre_save, sender=Category)
+def base_post_pre_save_receiver(sender, instance, *args, **kwargs):
+    if not instance.slug:
+        instance.slug = unique_slug_generator(instance)
