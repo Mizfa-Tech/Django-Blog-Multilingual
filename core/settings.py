@@ -1,6 +1,7 @@
 import os
 import environ
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 env = environ.Env(DEBUG=(bool, False))
 
@@ -22,6 +23,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',  # for Translation Model (3rd party package)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -30,17 +32,26 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 3rd party
+    'jquery',
     'rest_framework',
     'drf_spectacular',
     'drf_spectacular_sidecar',
+    'ckeditor',
+    'ckeditor_uploader',
+    'rosetta',
+    'django_filters',
 
     # my app
+    'account.apps.AccountConfig',
+    'blog.apps.BlogConfig',
+    'utils.apps.UtilsConfig',
 
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  # Language config
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -62,6 +73,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'my_tags': 'utils.templatetags.change_language_tag',
+            }
         },
     },
 ]
@@ -101,6 +115,17 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = (
+    ('en', _('English')),
+    ('fa', _('Persian')),
+)
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR / 'locale/', )
+]
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -132,3 +157,17 @@ SPECTACULAR_SETTINGS = {
     'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
     'REDOC_DIST': 'SIDECAR',
 }
+
+# Config User
+AUTH_USER_MODEL = 'account.CustomUser'
+
+# Ckeditor Config
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+    }
+}
+
+# Config Rosetta
+ROSETTA_MESSAGES_PER_PAGE = 100
