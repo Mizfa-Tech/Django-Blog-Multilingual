@@ -23,6 +23,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',  # for Translation Model (3rd party package)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
