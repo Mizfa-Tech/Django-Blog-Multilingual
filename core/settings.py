@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'rosetta',
+    'django_filters',
 
     # my app
     'account.apps.AccountConfig',
