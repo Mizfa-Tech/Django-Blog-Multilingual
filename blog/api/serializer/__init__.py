@@ -1,1 +1,3 @@
 from .serializer_list_post import ListPostSerializer
+from .serializer_detail_post import DetailPostSerializer
+from .serializer_create_update_post import CreateUpdatePostSerializer
