@@ -1,5 +1,9 @@
 {% load i18n %}
 
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_available_languages as AVAILABLE_LANGUAGES %}
+{% get_language_info_list for AVAILABLE_LANGUAGES as languages %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +26,12 @@
 
 
     <style>
+        {% if CURRENT_LANGUAGE == 'fa' %}
+            * {
+                direction: rtl;
+            }
+        {% endif %}
+
         h1, h3 {
             color: #266150;
         }
@@ -52,7 +62,8 @@
 </head>
 <body>
 <div class="container">
-    <h1 style="margin-bottom: 60px;padding-top: 50px;: "><a href="{% url 'blog:list' %}">{% translate 'TestDriven.io Courses' %}</a></h1>
+    <h1 style="margin-bottom: 60px;padding-top: 50px;: "><a
+            href="{% url 'blog:list' %}">{% translate 'TestDriven.io Courses' %}</a></h1>
 
 
     {% include 'inc/language.html' %}
