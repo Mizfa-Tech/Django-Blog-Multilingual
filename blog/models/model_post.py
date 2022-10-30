@@ -19,3 +19,7 @@ class Post(Seo, DateBasic, BasicPost, Status):
         return self.title
 
 
+@receiver(pre_save, sender=Post)
+def base_post_pre_save_receiver(sender, instance, *args, **kwargs):
+    if not instance.slug:
+        instance.slug = unique_slug_generator(instance)

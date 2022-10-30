@@ -11,16 +11,18 @@ class CategoryAdmin(TranslationAdmin):
     readonly_fields = ('created_at', 'updated_at')
 
     fieldsets = (
-        (_("Main"), {'fields': ('title', 'slug', 'thumbnail', 'thumbnail_alt', 'description')}),
-        (_('Sub Category'), {'fields': ('parent_category',)}),
+        (_('Fa'), {'fields': ('title_fa', 'parent_category_fa', 'description_fa')}),
+        (_('En'), {'fields': ('title_en', 'parent_category_en', 'description_en')}),
+        (_("Main"), {'fields': ('slug', 'thumbnail', 'thumbnail_alt')}),
         (_('Date'), {'fields': ('created_at', "updated_at")}),
         (_("SEO Information"), {'fields': ("meta_title", "meta_description")}),
         (_('Settings'), {'fields': ('status',)}),
     )
 
     add_fieldsets = (
-        (_("Main"), {'fields': ('title', 'slug', 'thumbnail', 'thumbnail_alt', 'description')}),
-        (_('Sub Category'), {'fields': ('parent_category',)}),
+        (_('Fa'), {'fields': ('title_fa', 'parent_category_fa', 'description_fa')}),
+        (_('En'), {'fields': ('title_en', 'parent_category_en', 'description_en')}),
+        (_("Main"), {'fields': ('slug', 'thumbnail', 'thumbnail_alt')}),
         (_("SEO Information"), {'fields': ("meta_title", "meta_description")}),
         (_('Settings'), {'fields': ('status',)}),
     )
