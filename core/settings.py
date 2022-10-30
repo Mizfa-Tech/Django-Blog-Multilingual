@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # 3rd party
+    'jquery',
     'rest_framework',
     'drf_spectacular',
     'drf_spectacular_sidecar',
@@ -117,6 +118,8 @@ LANGUAGES = (
     ('en', _('English')),
     ('fa', _('Persian')),
 )
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 LOCALE_PATHS = [
     os.path.join(BASE_DIR / 'locale/', )
