@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load widget_tweaks %}
+
+{% block title %}{% endblock %}
+{% block extra_style %}{% endblock %}
+
+
+{% block main %}
+    {{ view_title }}
+    <form method="post">
+        {% csrf_token %}
+
+        {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+
+        {% for field in form.visible_fields %}
+            <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field|add_class:'form-control' }}
+                {% for error in field.errors %}
+                    <span class="help-block">{{ error }}</span>
+                {% endfor %}
+            </div>
+        {% endfor %}
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">
+                <span class="glyphicon glyphicon-ok"></span> Save
+            </button>
+            <a href="" class="btn btn-default">Cancel</a>
+        </div>
+    </form>
+{% endblock %}
+
+
+{% block extra_js %}{% endblock %}

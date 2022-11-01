@@ -5,11 +5,11 @@ from django.db.models.signals import pre_save
 from django.dispatch import receiver
 
 from blog.models import Category
-from utils.general.models import Seo, Status, BasicPost, DateBasic
+from utils.general.models import Seo, Status, BasicPost, DateBasic,LanguageStatus
 from utils.utile.unique_slug_generator import unique_slug_generator
 
 
-class Post(Seo, DateBasic, BasicPost, Status):
+class Post(Seo, DateBasic, BasicPost, Status,LanguageStatus):
     class Meta:
         verbose_name = _('Post')
         verbose_name_plural = _('Posts')

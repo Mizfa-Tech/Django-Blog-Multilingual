@@ -1,0 +1,1 @@
+from .form_create_update_post import CreateUpdatePostForm

@@ -7,10 +7,11 @@ from utils.general.models import DateBasic
 from utils.general.models import Seo
 from utils.general.models import Taxonomy
 from utils.general.models import Status
+from utils.general.models import LanguageStatus
 from utils.utile.unique_slug_generator import unique_slug_generator
 
 
-class Category(Seo, Taxonomy, DateBasic, Status):
+class Category(Seo, Taxonomy, DateBasic, Status, LanguageStatus):
     class Meta:
         verbose_name = _('Category')
         verbose_name_plural = _('Categories')
