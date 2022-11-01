@@ -13,6 +13,7 @@ django-modeltranslation==0.18.5
 django-parler==2.3
 django-parler-rest==2.2
 django-rosetta==0.9.8
+django-widget-tweaks==1.4.12
 djangorestframework==3.14.0
 drf-spectacular==0.24.2
 drf-spectacular-sidecar==2022.10.1
