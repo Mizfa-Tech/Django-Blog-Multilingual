@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 12:31+0000\n"
-"PO-Revision-Date: 2022-10-30 12:34+0000\n"
+"POT-Creation-Date: 2022-11-01 12:21+0000\n"
+"PO-Revision-Date: 2022-11-01 12:22+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -22,12 +22,12 @@ msgstr ""
 #: blog/admin/admin_category.py:14 blog/admin/admin_category.py:23
 #: blog/admin/admin_post.py:14 blog/admin/admin_post.py:23
 msgid "Fa"
-msgstr ""
+msgstr "Persian"
 
 #: blog/admin/admin_category.py:15 blog/admin/admin_category.py:24
 #: blog/admin/admin_post.py:15 blog/admin/admin_post.py:24
 msgid "En"
-msgstr ""
+msgstr "English"
 
 #: blog/admin/admin_category.py:16 blog/admin/admin_category.py:25
 #: blog/admin/admin_post.py:16 blog/admin/admin_post.py:25
@@ -35,7 +35,7 @@ msgid "Main"
 msgstr "Main"
 
 #: blog/admin/admin_category.py:17 blog/admin/admin_post.py:17
-#: blog/templates/blog/detail_post.html:7
+#: blog/templates/blog/detail_post.html:7 blog/templates/blog/list_post.html:9
 msgid "Date"
 msgstr "Date"
 
@@ -52,53 +52,65 @@ msgstr "Settings"
 msgid "SEO information"
 msgstr "SEO information"
 
-#: blog/models/model_category.py:15 blog/templates/blog/detail_post.html:10
+#: blog/models/model_category.py:16 blog/templates/blog/detail_post.html:11
+#: blog/templates/blog/list_post.html:12
 msgid "Category"
 msgstr "Category"
 
-#: blog/models/model_category.py:16
+#: blog/models/model_category.py:17
 msgid "Categories"
 msgstr "Categories"
 
-#: blog/models/model_category.py:19
+#: blog/models/model_category.py:20
 msgid "parent category"
 msgstr "parent category"
 
-#: blog/models/model_post.py:13
+#: blog/models/model_post.py:14
 msgid "Post"
 msgstr "Post"
 
-#: blog/models/model_post.py:14
+#: blog/models/model_post.py:15
 msgid "Posts"
 msgstr "Posts"
 
-#: blog/models/model_post.py:16
+#: blog/models/model_post.py:17
 msgid "category"
 msgstr "category"
 
-#: blog/templates/blog/detail_post.html:6
-#| msgid "author"
+#: blog/templates/blog/detail_post.html:10
 msgid "Author"
 msgstr "author"
 
-#: core/settings.py:119
+#: blog/templates/blog/list_post.html:17
+msgid "Database is empty"
+msgstr "Database is empty"
+
+#: blog/views/view_create_post.py:14
+#, fuzzy
+#| msgid "created at"
+msgid "create post"
+msgstr "created at"
+
+#: blog/views/view_update_post.py:14
+#, fuzzy
+#| msgid "updated at"
+msgid "update post"
+msgstr "updated at"
+
+#: core/settings.py:120
 msgid "English"
 msgstr "English"
 
-#: core/settings.py:120
+#: core/settings.py:121
 msgid "Persian"
 msgstr "Persian"
 
-#: templates/base.html:18
+#: templates/base.html:22
 msgid "This is the title"
 msgstr ""
 
-#: templates/base.html:55
+#: templates/base.html:66
 msgid "TestDriven.io Courses"
-msgstr ""
-
-#: templates/inc/language.html:9
-msgid "Language"
 msgstr ""
 
 #: utils/general/models/model_basic_post_abstract.py:26
@@ -168,6 +180,10 @@ msgstr "Pending"
 #: utils/general/models/model_status_abstract.py:14
 msgid "status"
 msgstr "status"
+
+#: utils/general/models/model_status_language.py:9
+msgid "is active"
+msgstr "is active"
 
 #: utils/general/models/model_taxonomy_abstraction.py:16
 msgid "description"

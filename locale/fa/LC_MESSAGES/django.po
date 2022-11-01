@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-30 12:32+0000\n"
-"PO-Revision-Date: 2022-10-30 12:34+0000\n"
+"POT-Creation-Date: 2022-11-01 12:21+0000\n"
+"PO-Revision-Date: 2022-11-01 12:24+0000\n"
 "Last-Translator:   <admin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -35,7 +35,7 @@ msgid "Main"
 msgstr "اصلی"
 
 #: blog/admin/admin_category.py:17 blog/admin/admin_post.py:17
-#: blog/templates/blog/detail_post.html:7
+#: blog/templates/blog/detail_post.html:7 blog/templates/blog/list_post.html:9
 msgid "Date"
 msgstr "تاریخ"
 
@@ -52,53 +52,64 @@ msgstr "تنطیمات"
 msgid "SEO information"
 msgstr "اطلاعات سئو"
 
-#: blog/models/model_category.py:15 blog/templates/blog/detail_post.html:10
+#: blog/models/model_category.py:16 blog/templates/blog/detail_post.html:11
+#: blog/templates/blog/list_post.html:12
 msgid "Category"
 msgstr "دسته بندی"
 
-#: blog/models/model_category.py:16
+#: blog/models/model_category.py:17
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: blog/models/model_category.py:19
+#: blog/models/model_category.py:20
 msgid "parent category"
 msgstr "زیر دسته بندی"
 
-#: blog/models/model_post.py:13
+#: blog/models/model_post.py:14
 msgid "Post"
 msgstr "پست"
 
-#: blog/models/model_post.py:14
+#: blog/models/model_post.py:15
 msgid "Posts"
 msgstr "پست ها"
 
-#: blog/models/model_post.py:16
+#: blog/models/model_post.py:17
 msgid "category"
 msgstr "دسته بندی"
 
-#: blog/templates/blog/detail_post.html:6
-#| msgid "author"
+#: blog/templates/blog/detail_post.html:10
 msgid "Author"
 msgstr "نویسنده"
 
-#: core/settings.py:119
+#: blog/templates/blog/list_post.html:17
+msgid "Database is empty"
+msgstr "دیتابیس خالی است"
+
+#: blog/views/view_create_post.py:14
+#| msgid "created at"
+msgid "create post"
+msgstr "ایجاد پست"
+
+#: blog/views/view_update_post.py:14
+#, fuzzy
+#| msgid "updated at"
+msgid "update post"
+msgstr "زمان اپدیت"
+
+#: core/settings.py:120
 msgid "English"
 msgstr "انگلیسی"
 
-#: core/settings.py:120
+#: core/settings.py:121
 msgid "Persian"
 msgstr "فارسی"
 
-#: templates/base.html:18
+#: templates/base.html:22
 msgid "This is the title"
 msgstr ""
 
-#: templates/base.html:55
+#: templates/base.html:66
 msgid "TestDriven.io Courses"
-msgstr ""
-
-#: templates/inc/language.html:9
-msgid "Language"
 msgstr ""
 
 #: utils/general/models/model_basic_post_abstract.py:26
@@ -168,6 +179,10 @@ msgstr "در انتظار"
 #: utils/general/models/model_status_abstract.py:14
 msgid "status"
 msgstr "وضعیت"
+
+#: utils/general/models/model_status_language.py:9
+msgid "is active"
+msgstr "فعال است ؟"
 
 #: utils/general/models/model_taxonomy_abstraction.py:16
 msgid "description"
